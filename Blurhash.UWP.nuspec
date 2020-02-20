@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Blurhash.UWP</id>
+    <version>1.0.0</version>
+    <title>Blurhash.UWP</title>
+    <description>Bridge library to use Blurhash within UWP</description>
+    <authors>Markus Palcer, Marcin Badurowicz</authors>
+    <owners>Marcin Badurowicz</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ktos/Blurhash.UWP</projectUrl>
+    <releaseNotes>initial revision</releaseNotes>
+    <copyright>Copyright © 2020 Marcin Badurowicz, Markus Palcer</copyright>
+    <tags>blurhash image encoding</tags>
+    <dependencies>
+      <group targetFramework="UAP10.0.16299">
+        <dependency id="Blurhash.Core" version="1.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <!-- WinMd and IntelliSense files -->
+    <file src="bin\Release\Blurhash.UWP.dll" target="lib\uap10.0.16299" />
+    <file src="bin\Release\Blurhash.UWP.xml" target="lib\uap10.0.16299" />
+
+    <!-- DLLs and resources -->
+    <file src="bin\ARM\Release\Blurhash.UWP.dll" target="runtimes\win10-arm\lib\uap10.0.16299" />
+    <file src="bin\ARM\Release\Blurhash.UWP.pri" target="runtimes\win10-arm\lib\uap10.0.16299" />
+
+    <file src="bin\ARM64\Release\Blurhash.UWP.dll" target="runtimes\win10-arm64\lib\uap10.0.16299" />
+    <file src="bin\ARM64\Release\Blurhash.UWP.pri" target="runtimes\win10-arm64\lib\uap10.0.16299" />
+
+    <file src="bin\x64\Release\Blurhash.UWP.dll" target="runtimes\win10-x64\lib\uap10.0.16299" />
+    <file src="bin\x64\Release\Blurhash.UWP.pri" target="runtimes\win10-x64\lib\uap10.0.16299" />
+
+    <file src="bin\x86\Release\Blurhash.UWP.dll" target="runtimes\win10-x86\lib\uap10.0.16299" />
+    <file src="bin\x86\Release\Blurhash.UWP.pri" target="runtimes\win10-x86\lib\uap10.0.16299" />
+  </files>
+</package>
