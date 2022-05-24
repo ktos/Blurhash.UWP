@@ -22,8 +22,7 @@ using Blurhash.UWP;
 
 // ...
 
-var decoder = new Decoder();
-var bitmap = decoder.Decode("LEHV6nWB2yk8pyo0adR*.7kCMdnj", 269, 173);
+var bitmap = Blurhasher.Decode("LEHV6nWB2yk8pyo0adR*.7kCMdnj", 269, 173);
 
 var source = new SoftwareBitmapSource();
 await source.SetBitmapAsync(bitmap);
@@ -55,9 +54,8 @@ else
         var decoder = await BitmapDecoder.CreateAsync(stream);
 
         softwareBitmap = await decoder.GetSoftwareBitmapAsync();
-
-        var encoder = new Encoder();
-        var blurhash = encoder.Encode(softwareBitmap, 4, 3);
+        
+        var blurhash = Blurhasher.Encode(softwareBitmap, 4, 3);
     }
 }
 ```
